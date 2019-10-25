@@ -1,0 +1,147 @@
+body{
+    background-color: #eee;
+}
+.profile {
+
+    height: 100%;
+    margin: 0 auto;
+}
+
+.profile__bg-img {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    -o-object-fit: cover;
+    object-fit: cover;
+
+    background-position: center center;  
+}
+
+.profile__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    z-index: 10;
+}
+
+.profile__main-img {
+    max-width: 600px;
+    width: 90%;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    height: auto;
+    border-radius: 5%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    z-index: 20;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1.0);
+}
+
+#detailsDiv {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#detailsDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#btnClose {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    -webkit-transform: translatey(18%);
+    transform: translatey(18%);
+    height: auto;
+    max-width: 100px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 20;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+#myCarousel .carousel-indicators {
+bottom: 0;
+}
+#myCarousel .carousel-indicators li {
+border: medium none;
+border-radius: 0;
+height: auto;
+margin-bottom: 5px;
+margin-left: 0;
+margin-right: 5px !important;
+margin-top: 0;
+width: 80px;
+}
+#myCarousel .carousel-indicators img {
+border: 2px solid #FFFFFF;
+float: left;
+height: auto;
+left: 0;
+width: 80px;
+}
+#myCarousel .carousel-indicators .active img {
+border: 2px solid #39b3d7;
+}
+
+.showDetails img {
+width: 100%;
+height: auto;
+max-height: 200px;
+}
+.col-md-3.image-box {
+    height: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 6px;
+    margin-top: 20px;
+    width: 24%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+.col-md-3.image-box p{
+    margin: 6px;
+} 
+.carousel-inner.cont-slider{
+    padding-right: 0;
+}
+
+@media screen and (max-width:576px){
+.profile__main-img {
+max-width: 400px;
+}
+}
+
+@media screen and (max-width:320px){
+.profile__main-img {
+max-width: 200px;
+}
+}
+.image-gallery-content h2{
+    display: flex;
+    justify-content: center;
+}
